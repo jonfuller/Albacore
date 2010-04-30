@@ -19,7 +19,7 @@ class MSBuild
     win_dir = ENV['windir'] || ENV['WINDIR']
     win_dir = 'C:/Windows' if win_dir.nil?
     
-    File.join(win_dir.dup, 'Microsoft.NET', 'Framework', 'v3.5', 'MSBuild.exe')
+    File.join(win_dir.dup, 'Microsoft.NET', 'Framework64', 'v4.0.30319', 'MSBuild.exe')
   end
   
   def build
